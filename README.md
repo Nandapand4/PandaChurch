@@ -15,5 +15,5 @@ O PandaChurch é um sistema de relatório de cultos que proporciona uma maneira 
 - Atribução de funções e responsabilidades aos membros voluntários de forma organizada.
 
 ## 🌐 Projeto
-Explore o projeto através deste link para obter mais detalhes e interagir com a plataforma.
+Explore o projeto através [deste link](https://panda-church.vercel.app) para obter mais detalhes e interagir com a plataforma.
 ![smartmockups_lt12dw39](https://github.com/Nandapand4/PandaChurch/assets/65633856/bd2394d2-160b-45ce-9ef9-512e18426adc)
