@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease; /* Transição suave para todos os elementos */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  background: url('https://source.unsplash.com/random/?church,night') no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: backgroundMovement 45s infinite alternate; /* Movimento suave do fundo */
+}
+
+@keyframes backgroundMovement {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.Wrapper {
+  width: 750px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px 50px;
+  margin: 100px;
+  transform: translateY(0); /* Adicionando transform para animação futura */
+}
+
+.Wrapper:hover {
+  transform: translateY(-10px); /* Movimento suave para cima ao passar o mouse */
+}
+
+.Wrapper h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Wrapper .input-box {
+  position: relative;
+  width: 100%;
+  heigh: 50px;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box textarea {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  resize: none;
+}
+
+.input-box textarea:focus {
+    outline: none; /* Remover a borda de foco */
+}
+
+.input-box textarea::placeholder {
+  color: #fff;
+}
+
+.input-box select {
+  appearance: none;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 30px;
+  padding: 20px 45px 20px 20px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+}
+
+.input-box box-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: white;
+  fill: white;
+}
+
+.input-box input:hover,
+.input-box textarea:hover,
+.input-box select:hover,
+.Wrapper .buttton:hover {
+  transform: scale(1.04); /* Aumentar em 5% ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar uma sombra para dar profundidade */
+}
+
+.Wrapper .buttton {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  margin: 30px 0px 5px 0px;
+}
+

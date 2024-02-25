@@ -1,0 +1,81 @@
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<title>Emissão de Relatórios | PandaChurch</title>
+<body>
+  <form action="">
+ 
+    <div class="Wrapper">
+      <h1>Sistema de relatórios de culto</h1>
+      <div class="input-box">
+        <select id=""/>
+          <option value="opcao1">Domingo | 10H</option>
+          <option value="opcao2">Domingo | 18H</option>
+          <option value="opcao3">Quarta | 20H</option>
+          <option value="opcao4">Sexta | 20H</option>
+          <option value="opcao5">Sábado | Jovens | 20H</option>
+          <option value="opcao6">Outro</option>
+        </select>
+      <box-icon name='chevrons-down'></box-icon>
+        <style>
+          .input-box box-icon[name='chevrons-down'] {
+            fill: black;
+          }
+        </style>
+      </div>
+      <div class="input-box">
+        <input type="date" id="dataInput">
+        <style>
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          display: none;
+        }
+        </style>
+        <box-icon type='solid' name='calendar'></box-icon>
+      </div>
+    
+      <div class="input-box">
+      <input type="text" placeholder="Pastor">
+      <box-icon type='solid' name='user'></box-icon>
+    </div>
+      <div class="input-box">
+      <input type="text" placeholder="Obreiros Operacionais">
+      <box-icon type='solid' name='user-detail'></box-icon>
+    </div>  
+      <div class="input-box">
+      <input type="text" placeholder="Obreiros Imposição de Mãos">
+      <box-icon type='solid' name='user-detail'></box-icon>
+    </div>
+      <div class="input-box">
+      <input type="text" placeholder="Aconselhamento/Secretária">
+      <box-icon type='solid' name='user-detail'></box-icon>
+    </div>  
+      <div class="input-box">
+      <input type="text" placeholder="Ministério Louvor">
+      <box-icon name='music' type='solid' ></box-icon>
+    </div>
+      <div class="input-box">
+      <input type="text" placeholder="Ministério Dança">
+      <box-icon name='street-view'></box-icon>
+    </div>  
+      <div class="input-box">
+      <input type="text" placeholder="Ministério Mídia & Sonoplastia">
+      <box-icon type='solid' name='video-recording'></box-icon>
+    </div>
+      <div class="input-box">
+      <input type="text" placeholder="Ministério Acolher & Estacionamento">
+      <box-icon type='solid' name='video-recording'></box-icon>
+    </div>  
+      <div class="input-box">
+      <input type="text" placeholder="Ministério Infantil">
+      <box-icon name='baby-carriage' type='solid' ></box-icon>
+    </div> 
+    
+      <div class="input-box">
+        <textarea name=""cols="20" rows="7" placeholder="Observações"></textarea>
+      </div> 
+    
+      <input class="buttton" type="reset" value="Limpar">
+      <button class="buttton" onclick="gerarRecibo()" class="buttton">Gerar Relatório</button>
+    </div>
+  
+  </form>
+</body>

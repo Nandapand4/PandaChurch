@@ -1,0 +1,3 @@
+function gerarRecibo() {
+  window.print()
+}
